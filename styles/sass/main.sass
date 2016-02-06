@@ -23,6 +23,28 @@ body
 	border: $PRIMARY_COLOR solid 5px
 	transition: all .2s linear
 	background-color: transparent
-	&:hover
-		transform: translateY(-5px)
-		box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23)
+	position: relative
+	display: flex
+	align-items: center
+	justify-content: center
+
+.center
+	border-radius: 100%
+	background-color: $PRIMARY_COLOR
+	width: 10px
+	height: 10px
+
+#second, #minute, #hour
+	position: absolute
+	top: 0
+	left: 0
+
+#second
+	svg
+		path, line
+			transform-origin: 0% 100%
+			transition: all .5s linear
+
+			&:hover
+				filter: drop-shadow(0px 0px 20px black)
+				-webkit-filter: drop-shadow(0px 0px 20px black)
