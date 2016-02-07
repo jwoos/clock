@@ -34,17 +34,20 @@ body
 	width: 10px
 	height: 10px
 
+.float
+	-webkit-filter: drop-shadow(0px 0px 4px black)
+	filter: drop-shadow(0px 0px 4px black)
+
 #second, #minute, #hour
 	position: absolute
 	top: 0
 	left: 0
+	width: 500px
+	height: 500px
 
 #second
 	svg
+		transition: all .2s linear
 		path, line
 			transform-origin: 0% 100%
 			transition: all .5s linear
-
-			&:hover
-				filter: drop-shadow(0px 0px 20px black)
-				-webkit-filter: drop-shadow(0px 0px 20px black)
