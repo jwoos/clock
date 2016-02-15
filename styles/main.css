@@ -42,10 +42,7 @@ body {
   width: 500px;
   height: 500px; }
 
-#second svg {
-  transition: all 0.2s linear; }
-  #second svg path, #second svg line {
-    transform-origin: 0% 100%;
-    transition: all 0.5s linear; }
+#second svg path, #second svg line {
+  transform-origin: 0% 100%; }
 
 /*# sourceMappingURL=main.css.map */
